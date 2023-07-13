@@ -1,0 +1,28 @@
+﻿@using ProjeOkul.Models.Sınıflar
+@model List<KargoTakip>
+@{
+    ViewBag.Title = "KargoTakip";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<table class="table table-striped">
+    <tr>
+        <th>Aciklama</th>
+        <th>Tarih</th>
+       
+
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Aciklama</td>
+            <td>@x.TarihZaman</td>
+            
+
+
+        </tr>
+    }
+</table>
+
+
